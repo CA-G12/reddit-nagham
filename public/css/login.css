@@ -1,0 +1,120 @@
+body {
+  background: var(--whiteColor);
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+.imgside {
+  width: 8%;
+  height: 100vh;
+  background: url("../images/login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rightside {
+  width: 80%;
+  transform: translate3d(2%, 15%, 0);
+  font-size: 14px;
+}
+.rightside a {
+  text-decoration: none;
+  color: #2684d8;
+}
+.rightside a:hover {
+  color: #7ab4e7;
+}
+.rightside form {
+  font-family: "IBMPlexSans", sans-serif;
+  transform: translateY(80%);
+}
+.rightside .googleSignin {
+  background-color: var(--whiteColor);
+  width: 20%;
+  height: 50px;
+  border: 1px solid #2684d8;
+  border-radius: 4px;
+  font-family: "IBMPlexSans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.rightside .googleSignin a:focus {
+  color: #ffffff;
+}
+
+.googleIcon {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.rightside form p {
+  position: absolute;
+  top: 80px;
+  left: 10%;
+  transform: translateX(-20%);
+}
+.rightside form .formElement {
+  position: absolute;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+}
+
+.rightside form .formElement input {
+  font-family: "IBMPlexSans", sans-serif;
+  border: 0.5px solid #ececeb;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  margin: 8px;
+  text-align-last: justify;
+}
+.rightside form .formElement input:focus {
+  outline: none;
+  box-shadow: 1px 2px #e1e1e2;
+  border-color: #4285f4;
+  transition: 0.4s;
+}
+
+.rightside form .formElement .logBtn {
+  color: var(--whiteColor);
+  background-color: #2684d8;
+  width: 300px;
+  height: 40px;
+  margin: 8px;
+  text-transform: uppercase;
+  border: solid #2684d8;
+}
+
+.rightside form .formElement .logBtn:hover {
+  background: var(--border);
+  border: solid var(--border);
+  color: #4285f4;
+}
+
+.sign {
+  position: absolute;
+  top: 70%;
+  transform: translateX(20%);
+}
+
+.error {
+  position: absolute;
+  top: 95%;
+  transform: translateX(30%);
+  color: #4285f4;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="custom-text-editor.js"></script>
+    <title>Reddit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link type="text/css" rel="stylesheet" href="../css/text.css" />
+    <link rel="shortcut icon" href="../images/reddit.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/posts.css" />
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div class="headerContent">
+        <div class="logo-input">
+          <div class="logo">
+            <i class="fa fa-reddit" style="font-size: 48px; color: red"></i>
+            <p><a href="../index.html">reddit</a></p>
+          </div>
+          <form action="/search" method="get" autocomplete="off">
+            <label><i class="fa fa-search"></i></label>
+            <input
+              type="search"
+              name="search"
+              class="serch-input"
+              placeholder="Search Reddit"
+            />
+          </form>
+        </div>
+        <div class="login-signup">
+          <button class="btn">
+            <a href="./pages/loginPage.html">log in </a>
+          </button>
+          <button class="btn btn1">
+            <a href="./pages/signup.html">sign up</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <label>Create a Post</label>
+      <hr style="margin-top: 20px" />
+      <form action="/createPost" method="post" id="form">
+        <textarea name="content" id="editor">
+        <p>This is the editor content.</p>
+    </textarea
+        >
+        <script src="../ckeditor/ckeditor.js"></script>
+        <!-- <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script> -->
+        <script>
+          //   CKEDITOR.replace('editor', {
+          //   width: '60%',
+          //   height: 300,
+          //   removeButtons: 'PasteFromWord'
+          // });
+        </script>
+        <button class="btn">post</button>
+      </form>
+      <p class="home"><a href="../index.html">Back Home</a></p>
+    </div>
+    <script src="../js/post.js"></script>
+  </body>
+</html>

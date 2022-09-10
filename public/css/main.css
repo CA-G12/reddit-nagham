@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+:root{
+    --backgroundColor: #dae0e6;
+    --whiteColor: #ffffff;
+    --border: #F6F7F8;
+    --inputText: #A0908C;
+    --btnColor: #3D99DE;
+}
+body{
+    font-family: 'IBM Plex Sans Condensed', Arial, sans-serif;
+    font-size: 20px;
+     color: #000;
+     /* font-weight: bold; */
+     line-height: 1;
+     background-color: var(--backgroundColor);
+     width: 100wh;
+}
