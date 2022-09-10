@@ -23,6 +23,10 @@ fetch("/isloged")
   .then((data) => data.json())
   .then(headerInformation);
 
+fetch("/signup")
+  .then((data) => data.json())
+  .then(headerInformation);
+
 posts.addEventListener("click", (e) => {
   e.preventDefault();
   fetch("/addPost", {
@@ -80,8 +84,8 @@ const showPosts = (data) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      post_id: data.post_id
-    })
+      post_id: data.post_id,
+    }),
   })
     .then((result) => result.json())
     .then((result) => (numOfVotes.textContent = result.rows[0].count));
