@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./images/reddit.jpg" type="image/x-icon" />
+
+  </head>
+  <body>
+    <header>
+      <div class="headerContent">
+        <div class="logo-input">
+          <div class="logo">
+            <i class="fa fa-reddit" style="font-size: 48px; color: red"></i>
+            <p><a href="#">reddit</a></p>
+          </div>
+          <form action="/search" method="get" autocomplete="off">
+            <label><i class="fa fa-search"></i></label>
+            <input
+              type="search"
+              name="search"
+              class="serch-input"
+              placeholder="Search Reddit"
+            />
+          </form>
+        </div>
+        <div class="login-signup">
+          <button class="btn">
+            <a href="./pages/loginPage.html">log in </a>
+          </button>
+          <button class="btn btn1">
+            <a href="./pages/signup.html">sign up</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <div class="page">
+        <div class="LTcolumn">
+          <div class="container">
+            <div class="postContainer">
+              <div class="avatar">
+                <i class="fa-brands fa-reddit" style="font-size: 30px"></i>
+              </div>
+              <input
+                type="text"
+                name="addPost"
+                placeholder="Create Post"
+                id="postInput"
+              />
+              <div class="icons" style="">
+                <i class="fa-thin fa-image"></i>
+                <i class="fa-light fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotCon">
+            <a href="#" class="hotco1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>  </svg>
+              <span>BEST</span></a>
+              <a href="#" class="hotco">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="IconChangeColor" height="200" width="200"><rect width="256" height="256" fill="none"></rect><path d="M208,144c0-72-80-120-80-120S48,72,48,144a80,80,0,0,0,160,0Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" id="mainIconPathAttribute"></path><path d="M88,184a40,40,0,0,0,80,0c0-40-40-64-40-64S88,144,88,184Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" id="mainIconPathAttribute"></path></svg>
+                <span>HOT</span></a>
+                <a href="#" class="hotco">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="IconChangeColor" height="200" width="200"><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z" id="mainIconPathAttribute" fill="#ffffff" stroke-width="0.6" stroke="#0d0d0d"></path></svg>
+                  <span>NEW</span></a>
+                  <a href="#" class="hotco">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" id="mainIconPathAttribute"></path> </svg>
+                    <span>TOP</span></a>
+                    <a href="#" class="hotco">
+                      <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd"><circle cx="10.5" cy="10.5" r="1"/><circle cx="5.5" cy="10.5" r="1"/><circle cx="15.5" cy="10.5" r="1"/></g></svg>
+                      </a>
+          </div>
+        </div>
+       
+        <div class="RTcolumn">
+          <div class="comunities">
+            <div class="coPhoto"><p>Communities Near You</p></div>
+
+            <div class="comu">
+              <span class="spa">1</span>
+              <span class="spa">Italy</span>
+              <a href="#" class="spa2">Join</a>
+              
+              
+            </div>
+            <div class="line"></div>
+            <div class="comu">
+              <span class="spa">2</span>
+              <span class="spa">Palestine</span>
+              <a href="#" class="spa2">Join</a>
+            </div>
+            <div class="line"></div>
+            <div class="comu">
+              <span class="spa">3</span>
+              <span class="spa">America</span>
+              <a href="#" class="spa2">Join</a>
+            </div>
+            <div class="line"></div>
+            <div class="comu">
+              <span class="spa">4</span>
+              <span class="spa">Germany</span>
+              <a href="#" class="spa2">Join</a>
+            </div>
+            <button>View All</button>
+
+            <div class="buttons"> 
+              <span class="options"><a href="#">Near You</a></span>
+              <span class="options"><a href="#">News</a></span>
+              <span class="options"><a href="#">Aww</a></span>
+              <span class="options"><a href="#">Gaming</a></span>
+            </div>
+          
+         
+          
+          </div>
+          <div class="premium">
+            <div class="rpre">
+              <div class="icon"></div>
+              <div class="txt">
+                <p><strong>Reddit Premium</strong></p>
+                <p>The best Reddit experience, with monthly Coins</p>
+              </div>
+
+            </div>
+            <button>Try Now</button>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
